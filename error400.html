@@ -97,7 +97,7 @@ body {
   margin: 0;
 }
 
-.notfound a {
+.notfound a,button {
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ body {
   transition: 0.2s all;
 }
 
-.notfound a:hover {
+.notfound a,button:hover {
   color: #8400ff;
 }
 
@@ -140,7 +140,8 @@ body {
 				<h1>400</h1>
 				<h2>Bad Request</h2>
 			</div>
-			<a href="#">Homepage</a>
+			<!-- <a href="#">Homepage</a> -->
+      <button onclick="history.back()">Go Back</button>
 		</div>
 	</div>
 

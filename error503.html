@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Error 503 </title>
+	<title>Error 400 </title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
@@ -97,7 +97,7 @@ body {
   margin: 0;
 }
 
-.notfound a {
+.notfound a,button {
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ body {
   transition: 0.2s all;
 }
 
-.notfound a:hover {
+.notfound a,button:hover {
   color: #8400ff;
 }
 
@@ -138,9 +138,10 @@ body {
 		<div class="notfound">
 			<div class="notfound-404">
 				<h1>503</h1>
-				<h2>Service Unavalable</h2>
+				<h2>Bad Request</h2>
 			</div>
-			<a href="#">Homepage</a>
+			<!-- <a href="#">Homepage</a> -->
+      <button onclick="history.back()">Go Back</button>
 		</div>
 	</div>
 
